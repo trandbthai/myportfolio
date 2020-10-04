@@ -1,0 +1,63 @@
+@tailwind base;
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url('../fonts/ProximaNova-Regular.otf') format('truetype');
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  @apply tracking-wider !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-proxima !important;
+}
+
+button:focus {
+  @apply outline-none;
+}
+@media only screen and (min-width: 640px) {
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.font-proxima {
+  font-family: Proxima Nova !important;
+}
+.font-opensans {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply overflow-hidden w-0;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-nonessential rounded-lg;
+}
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-pink-gradient {
+  background: linear-gradient(264.06deg, #f6e9ee 10.44%, #e7c0cf 95.19%);
+}
