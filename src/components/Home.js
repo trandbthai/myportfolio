@@ -142,6 +142,7 @@ const Home = () => {
                 className="ml-3"
                 href="https://www.linkedin.com/in/trandbthai/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 linkedin.com/in/trandbthai/
               </a>
@@ -152,6 +153,7 @@ const Home = () => {
                 className="ml-3"
                 href="https://github.com/trandbthai"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 github.com/trandbthai
               </a>

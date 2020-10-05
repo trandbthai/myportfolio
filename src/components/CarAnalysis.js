@@ -40,7 +40,7 @@ const CarAnalysis = () => {
           <IconButton>
             <HomeIcon
               onClick={() => {
-                window.open(`http://localhost:5000`, '_blank');
+                window.open('/');
               }}
             />
           </IconButton>
@@ -53,7 +53,12 @@ const CarAnalysis = () => {
       </div>
 
       <div className="mt-6 flex items-center">
-        <a className="text-xs" href="http://localhost:5000">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs"
+          href="https://www.linkedin.com/in/trandbthai/"
+        >
           <Avatar
             classes={{
               root: 'h-16 w-16 ml-24 border-2 hover:border-red-300',
@@ -70,11 +75,32 @@ const CarAnalysis = () => {
 
       <div className="mt-6 ml-16 mr-16">
         <p className="ml-6 mr-6 text-justify text-sm">
-          This is my capstone project for my course "" at the Northeastern
-          university. In this course, I learnt alot from my professor and also
-          other team members: ... who I have a chance working together for this
-          project. You can find my Jupyter notebook for the data analysis here
-          and the dataset here.
+          This is my capstone project for the {'Analytics System Technology '}
+          course at Northeastern University. In this course, I had been taught
+          about Python and how to use it for doing analysis and visualization.
+          For this project, this ia a great opportunity for me to work with
+          three good classmates: Benjamin Raborn, Jingchao Hou, and Chunbing
+          Yang.
+        </p>
+        <p className="ml-6 mr-6 text-justify text-sm">
+          You can find my Jupyter notebook for the data analysis{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/trandbthai/car-accident-analysis/blob/master/car-accident-analysis.ipynb"
+            className="font-bold"
+          >
+            here
+          </a>{' '}
+          and the dataset{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://catalog.data.gov/dataset/motor-vehicle-crashes-case-information-beginning-2009"
+            className="font-bold"
+          >
+            here.
+          </a>
         </p>
       </div>
 

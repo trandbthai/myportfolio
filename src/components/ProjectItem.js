@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import {BrowserRouter as Router,Link, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import {Button, Card, CardMedia} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 import darkbg from '../img/bgdark.jpeg';
@@ -68,7 +68,9 @@ const ProjectItem = props => {
                   variant="outlined"
                   size="large"
                   className={classes.button}
-                  onClick={() => {window.open(`${project}`, "_blank")}}
+                  onClick={() => {
+                    window.open(`${project}`);
+                  }}
                 >
                   Take A Look
                 </Button>

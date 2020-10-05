@@ -11,7 +11,7 @@ const Medical = () => {
         <IconButton>
           <HomeIcon
             onClick={() => {
-              window.open(`http://localhost:5000`, '_blank');
+              window.open(`/`);
             }}
           />
         </IconButton>
@@ -25,7 +25,12 @@ const Medical = () => {
         <div className="mt-4 h-full flex justify-center items-center ">
           <div className="w-1/2 ml-12 h-full flex-row justify-center items-center ">
             <div className="flex items-center">
-              <a className="text-xs" href="http://localhost:5000">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs"
+                href="https://www.linkedin.com/in/trandbthai/"
+              >
                 <Avatar
                   classes={{
                     root: 'h-16 w-16 ml-6 border-2 hover:border-teal-500',
@@ -52,17 +57,19 @@ const Medical = () => {
               <p className="text-justify">
                 You can find my Jupyter notebook for the data analysis{' '}
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-bold"
                   href="https://github.com/trandbthai/medical-billing/blob/master/medical-billing.ipynb"
-                  target="_blank"
                 >
                   here
                 </a>
                 <span> and the dataset </span>
                 <a
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-bold"
                   href="https://www.kaggle.com/mirichoi0218/insurance"
-                  target="_blank"
                 >
                   here
                 </a>

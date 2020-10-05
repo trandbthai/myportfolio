@@ -128,7 +128,7 @@ const Game = () => {
           <HomeIcon
             sizelarge
             onClick={() => {
-              window.open(`http://localhost:5000`);
+              window.open(`/`);
             }}
           />
         </IconButton>
