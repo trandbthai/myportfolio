@@ -37,12 +37,12 @@ const CarAnalysis = () => {
     <>
       <div className="h-24 flex bg-red-800 ">
         <div className="ml-3">
-          <IconButton>
-            <HomeIcon
-              onClick={() => {
-                window.open('/');
-              }}
-            />
+          <IconButton
+            onClick={() => {
+              window.open('/', '_top');
+            }}
+          >
+            <HomeIcon />
           </IconButton>
         </div>
         <div className="w-full flex justify-center items-center ">
@@ -78,9 +78,8 @@ const CarAnalysis = () => {
           This is my capstone project for the {'Analytics System Technology '}
           course at Northeastern University. In this course, I had been taught
           about Python and how to use it for doing analysis and visualization.
-          For this project, this ia a great opportunity for me to work with
-          three good classmates: Benjamin Raborn, Jingchao Hou, and Chunbing
-          Yang.
+          This project was a great opportunity for me to work with three good
+          classmates: Benjamin Raborn, Jingchao Hou, and Chunbing Yang.
         </p>
         <p className="ml-6 mr-6 text-justify text-sm">
           You can find my Jupyter notebook for the data analysis{' '}
@@ -88,7 +87,7 @@ const CarAnalysis = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/trandbthai/car-accident-analysis/blob/master/car-accident-analysis.ipynb"
-            className="font-bold"
+            className="font-bold text-blue-600"
           >
             here
           </a>{' '}
@@ -97,7 +96,7 @@ const CarAnalysis = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://catalog.data.gov/dataset/motor-vehicle-crashes-case-information-beginning-2009"
-            className="font-bold"
+            className="font-bold text-blue-600"
           >
             here.
           </a>

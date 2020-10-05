@@ -8,12 +8,12 @@ const Medical = () => {
   return (
     <div className="h-screen">
       <div className="ml-3">
-        <IconButton>
-          <HomeIcon
-            onClick={() => {
-              window.open(`/`);
-            }}
-          />
+        <IconButton
+          onClick={() => {
+            window.open('/', '_top');
+          }}
+        >
+          <HomeIcon />
         </IconButton>
       </div>
       <div className="h-full mx-6 flex-row justify-center items-center">
@@ -59,7 +59,7 @@ const Medical = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold"
+                  className="font-bold text-blue-600"
                   href="https://github.com/trandbthai/medical-billing/blob/master/medical-billing.ipynb"
                 >
                   here
@@ -68,7 +68,7 @@ const Medical = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold"
+                  className="font-bold text-blue-600"
                   href="https://www.kaggle.com/mirichoi0218/insurance"
                 >
                   here

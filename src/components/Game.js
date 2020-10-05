@@ -124,13 +124,11 @@ const Game = () => {
           classes={{
             root: 'bg-white hover:bg-gray-200',
           }}
+          onClick={() => {
+            window.open('/', '_top');
+          }}
         >
-          <HomeIcon
-            sizelarge
-            onClick={() => {
-              window.open(`/`);
-            }}
-          />
+          <HomeIcon sizelarge />
         </IconButton>
       </div>
       <div className="flex items-center ">

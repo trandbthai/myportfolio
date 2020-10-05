@@ -144,7 +144,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/in/trandbthai/
+                linkedin.com/in/trandbthai
               </a>
             </div>
             <div className="flex items-center h-full">
