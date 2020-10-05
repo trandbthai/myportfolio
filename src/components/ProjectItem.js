@@ -68,7 +68,7 @@ const ProjectItem = props => {
                   variant="outlined"
                   size="large"
                   className={classes.button}
-                  onClick={() => {window.open(`http://localhost:5000${project}`, "_blank")}}
+                  onClick={() => {window.open(`${project}`, "_blank")}}
                 >
                   Take A Look
                 </Button>
