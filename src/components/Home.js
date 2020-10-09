@@ -69,11 +69,12 @@ const Home = () => {
             Hi, My name is Tran Thai.
           </h2>
           <p className="mt-6 px-24 text-left">
-            I am a driven individual with the ability to adapt to any situation
-            and proven potential to grow self and others.
+            I am a hard-working individual with the ability to adapt to any
+            situation and motivate to learn and grow self.
           </p>
           <p className="px-24 text-left">
-            My goal is to simply become a better version of myself every day.
+            I have started working as a data analyst since 2015 with experience
+            in both the pharmaceuticals and the consumer product industry.
           </p>
         </div>
       </div>
@@ -111,7 +112,7 @@ const Home = () => {
                   Front-end Developer
                 </h5>
                 <p className="text-center">
-                  I am a self-taught front-end developer, who love playing with
+                  I am a self-taught front-end developer, who loves playing with
                   coding and creating beautiful websites.
                 </p>
                 <p className=" mt-2 text-center font-bold">Languages:</p>
