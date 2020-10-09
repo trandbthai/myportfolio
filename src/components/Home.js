@@ -74,7 +74,7 @@ const Home = () => {
           </p>
           <p className="px-24 text-left">
             I have started working as a data analyst since 2015 with experience
-            in both the pharmaceuticals and the consumer product industry.
+            in the pharmaceuticals industry.
           </p>
         </div>
       </div>
