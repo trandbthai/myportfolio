@@ -62,13 +62,12 @@ startFont = pygame.font.Font('freesansbold.ttf', 32)
 def start():
     display = startFont.render(
         f'Press Spacebar to Start', True, (255, 255, 255))
-    SCREEN.blit(display, (61, 620))
+    SCREEN.blit(display, (61, 625))
     pygame.display.update()
 
 
 # GAME OVER SCREEN
-score_list = [0]
-
+score_list = [0]  # to store each score of each attempt
 game_over_font1 = pygame.font.Font('freesansbold.ttf', 64)
 game_over_font2 = pygame.font.Font('freesansbold.ttf', 32)
 
