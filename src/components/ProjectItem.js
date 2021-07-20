@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {useHistory} from 'react-router-dom';
-import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
-import {Button, Card, CardMedia} from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { Button, Card, CardMedia } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import darkbg from '../img/bgdark.jpeg';
 
 const useStyles = makeStyles({
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 
 const ProjectItem = props => {
   const classes = useStyles();
-  const {originalBackground, logo, intro, project} = props;
+  const { originalBackground, logo, intro, project } = props;
   const [background, setBackground] = useState(originalBackground);
   const [label, setLabel] = useState(logo);
   const [isShown, setIsShown] = useState(false);
@@ -43,7 +43,7 @@ const ProjectItem = props => {
   let history = useHistory();
 
   return (
-    <Card class={{boxShadow: 'none'}}>
+    <Card class={{ boxShadow: 'none' }}>
       <CardMedia
         class={classes.media}
         image={background}
@@ -69,7 +69,7 @@ const ProjectItem = props => {
                   size="large"
                   className={classes.button}
                   onClick={() => {
-                    window.open(`${project}`);
+                    window.open(`${project}`, '_top');
                   }}
                 >
                   Take A Look

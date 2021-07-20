@@ -1,12 +1,12 @@
 import React from 'react';
 
 import AppBar from '@material-ui/core/AppBar';
-import {Button, Avatar} from '@material-ui/core';
+import { Button, Avatar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import CodeIcon from '@material-ui/icons/Code';
-import PhoneIcon from '@material-ui/icons/Phone';
+import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -52,7 +52,7 @@ const Home = () => {
       <div className="h-64 mt-6 flex justify-center items-center">
         <div className="flex-col">
           <h2 className=" text-4xl text-red-800 text-center font-bold">
-            Data Analyst and Front-End Developer
+            Software Engineer - Full Stack Developer
           </h2>
           <p className="text-2xl text-gray-600 text-center">
             I might not be the best but I'm always trying my best.
@@ -73,16 +73,15 @@ const Home = () => {
             situation and motivate to learn and grow self.
           </p>
           <p className="px-24 text-left">
-            I have started working as a data analyst since 2015 with experience
-            in the pharmaceuticals industry.
+
           </p>
         </div>
       </div>
 
-      <div id="aboutMe" className="w-screen h-24" />
-      <div className="flex mt-6 h-64 ">
-        <div className="w-1/2 h-full flex justify-end ">
-          <div className="w-5/12 h-full mr-10 border-solid border-4 border-gray-600 rounded-lg">
+      <div id="aboutMe" className="w-screen h-50%" />
+      <div className="flex mt-16 h-64">
+        <div className="w-1/3 h-full flex justify-end">
+          <div className="w-2/3 h-full">
             <div className="flex-col m-auto">
               <div className="mt-2 flex justify-center">
                 <AssessmentIcon className="text-3xl text-red-700" />
@@ -92,8 +91,8 @@ const Home = () => {
                   Data Analyst
                 </h5>
                 <p className="text-center">
-                  I am fascinated by numbers, data, and making them more
-                  meaningful in the most appealing way.
+                  Fascinated by numbers, data, and making them more
+                  meaningful <br /> in the most appealing way.
                 </p>
                 <p className="mt-2 text-center font-bold">Analytical tools:</p>
                 <p className="text-center">Python, Tableau, MySQL</p>
@@ -101,22 +100,43 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 h-full flex justify-start ">
-          <div className="w-5/12 h-full ml-10 border-solid border-4 border-gray-600 rounded-lg">
+        <div className="w-1/3 h-full flex justify-center">
+          {/*border-solid border-4 border-gray-600 rounded-lg*/}
+          <div className="w-2/3 h-full ">
             <div className="flex-col m-auto">
               <div className="mt-2 flex justify-center">
                 <CodeIcon className="text-3xl text-red-700" />
               </div>
               <div className="p-2">
                 <h5 className="text-center text-2xl text-red-800 font-bold">
-                  Front-end Developer
+                  Software Developer
                 </h5>
                 <p className="text-center">
-                  I am a self-taught front-end developer, who loves playing with
-                  coding and creating beautiful websites.
+                  Excited in playing with coding <br />and passionated in <br />creating impactful products.
+
                 </p>
-                <p className=" mt-2 text-center font-bold">Languages:</p>
-                <p className="text-center">HTML, CSS, JavaScript, React</p>
+                <p className="mt-2 text-center font-bold">Languages:</p>
+                <p className="text-center">Python, JavaScript, HTML/CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-1/3 h-full flex justify-start">
+          <div className="w-2/3 h-full">
+            <div className="flex-col m-auto">
+              <div className="mt-2 flex justify-center">
+                <AssignmentTurnedInIcon className="text-3xl text-red-700" />
+              </div>
+              <div className="p-2">
+                <h5 className="text-center text-2xl text-red-800 font-bold">
+                  Software QA Engineer
+                </h5>
+                <p className="text-center">
+                  Quality-driven, attention to details <br /> and a positive team
+                  player <br />with great analytical skills
+                </p>
+                <p className=" mt-2 text-center font-bold">QA tools:</p>
+                <p className="text-center">Jira, Testrail, Selenium, Asana</p>
               </div>
             </div>
           </div>
@@ -136,12 +156,12 @@ const Home = () => {
           <div className="w-1/6 h-full flex justify-center items-center">
             <img alt="contact" src={contact} className="h-28 w-28" />
           </div>
-          <div className="w-5/6 h-full grid grid-cols-4 items-center">
+          <div className="w-5/6 h-full grid grid-cols-3 items-center">
             <div className="flex items-center h-full">
               <LinkedInIcon />
               <a
                 className="ml-3"
-                href="https://www.linkedin.com/in/trandbthai/"
+                href="https://www.linkedin.com/in/tdbthai/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -162,10 +182,6 @@ const Home = () => {
             <div className="flex items-center h-full">
               <MailIcon className="ml-6" />
               <p className="ml-3">trandbthai@gmail.com</p>
-            </div>
-            <div className="flex items-center h-full">
-              <PhoneIcon className="ml-6" />
-              <p className="ml-3">(857) 222 6423</p>
             </div>
           </div>
         </div>
